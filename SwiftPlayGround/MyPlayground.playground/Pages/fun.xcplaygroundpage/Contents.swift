@@ -42,4 +42,50 @@ func minMax(array:[Int]) -> (min:Int ,max:Int){
 }
 let minandMax = minMax(array: [4,2,5,8,4,9,332,6,1])
 print("最小值为\(minandMax.min),最大值为 \(minandMax.max)")
+enum d {
+    case sunday
+    case monday
+    case TUESDAY
+    case WEDNESDAY
+  
+}
+var weekDay = d.sunday
+weekDay = .TUESDAY
+
+switch weekDay {
+case .sunday:
+    print("sunday")
+case .monday:
+    print("2222")
+default:
+    print("default")
+}
+
+
+enum barcode{
+    case upc (s1:Int,s2:Int,s3:Int,s4:Int)
+    case qrcoder(String)
+}
+let product = barcode.upc(s1: 2, s2: 3, s3: 4, s4: 5)
+
+
+print("\(product)")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //: [Next](@next)
