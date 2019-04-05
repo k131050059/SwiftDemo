@@ -12,8 +12,19 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-  
-        print(myString)
+        
+        do{
+            let rotateAnimationView :  CLRotateAnimationView = CLRotateAnimationView(frame: CGRect(x: 120, y: 120, width: 80, height: 80));
+            rotateAnimationView.updateWithConfigure { (configure) -> (Void) in
+                configure.backgroundColor = UIColor.orange;
+                configure.number = 8;
+                configure.duration = 3;
+                configure.intervalDuration = 0.12;
+            }
+            rotateAnimationView.startAnimation()
+            self.view.addSubview(rotateAnimationView)
+        }
+
         // Do any additional setup after loading the view, typically from a nib.
     }
 
