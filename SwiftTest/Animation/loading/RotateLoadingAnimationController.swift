@@ -52,6 +52,14 @@ class RotateLoadingAnimationController: UIViewController{
             view.addSubview(roundAnimationView)
             roundAnimationView.startAnimation()
         }
+        
+        let waveView = WaterWaveView(frame: CGRect(x:0, y: 250, width: 320, height: 40))
+        self.view.addSubview(waveView)
+        
+        waveView.starAnimation()  // 开始动画
+        
+        
+        
     }
     
     @objc func jiabuttonClick(){

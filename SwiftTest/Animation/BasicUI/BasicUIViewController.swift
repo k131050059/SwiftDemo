@@ -16,7 +16,7 @@ class BasicUIViewController: UIViewController, UITextFieldDelegate,UIPickerViewD
     private var ScreenW :CGFloat!
     var dataArray: Array<Array<String>> = []
     override func viewDidLoad() {
-        
+        super.viewDidLoad()
         self.ScreenW = self.view.frame.size.width
         let scrollView:UIScrollView = UIScrollView(frame: self.view.bounds)
         scrollView.contentSize=CGSize(width: ScreenW, height: 2000)

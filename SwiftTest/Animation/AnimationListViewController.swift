@@ -8,7 +8,7 @@
 
 import UIKit
 class AnimationListViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
-    let titles = ["转圈和按钮", "基本控件"]
+    let titles = ["一些动画", "基本控件","字符串操作"]
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.isTranslucent = false
@@ -39,6 +39,11 @@ class AnimationListViewController: UIViewController,UITableViewDelegate,UITableV
             break
         case 1:
             let vc = BasicUIViewController()
+            vc.title = titles[indexPath.row]
+            self.navigationController?.pushViewController(vc, animated: true)
+            break
+        case 2:
+            let vc = StringViewController()
             vc.title = titles[indexPath.row]
             self.navigationController?.pushViewController(vc, animated: true)
             break
