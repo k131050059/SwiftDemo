@@ -9,9 +9,13 @@
 import UIKit
 class RotateLoadingAnimationController: UIViewController{
     var rotateAnimationView :  CLRotateAnimationView = CLRotateAnimationView(frame: CGRect(x: 0, y: 0, width: 80, height: 80));
-    
+     var waveViewtest: waveView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let scrollView:UIScrollView = UIScrollView(frame: self.view.bounds)
+        scrollView.contentSize=CGSize(width: self.view.frame.size.width, height: 2000)
+        self.view = scrollView
         self.view.backgroundColor=UIColor.white
         do{
             
@@ -53,11 +57,21 @@ class RotateLoadingAnimationController: UIViewController{
             roundAnimationView.startAnimation()
         }
         
-        let waveView = WaterWaveView(frame: CGRect(x:0, y: 250, width: 320, height: 40))
-        self.view.addSubview(waveView)
+        let WaterView = WaterWaveView(frame: CGRect(x:0, y: 250, width: 320, height: 40))
+        self.view.addSubview(WaterView)
         
-        waveView.starAnimation()  // 开始动画
+        WaterView.starAnimation()  // 开始动画
         
+        
+        waveViewtest = waveView(frame: CGRect(x: 0, y: 410, width: view.frame.size.width, height: 150))
+        waveViewtest.alpha = 0.6
+        waveViewtest.updateWithConfigure({ (configure) in
+            configure.color = UIColor.orange;
+            configure.y = 120
+            configure.speed = 0.05
+            configure.upSpeed = 0.1
+        })
+        view.addSubview(waveViewtest)
         
         
     }
@@ -82,5 +96,7 @@ class RotateLoadingAnimationController: UIViewController{
         rotateAnimationView.stopAnimation()
         rotateAnimationView.startAnimation()
     }
-    
+    deinit {
+        waveViewtest.invalidate()
+    }
 }

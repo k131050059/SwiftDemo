@@ -14,6 +14,7 @@
 		1F3CDCAD22573B6F00B8A0ED /* CLRotateAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3CDCAC22573B6F00B8A0ED /* CLRotateAnimationView.swift */; };
 		1F60C7722258B1A5004CA398 /* StringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F60C7712258B1A5004CA398 /* StringViewController.swift */; };
 		1F60C7742258B888004CA398 /* WaterWaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F60C7732258B888004CA398 /* WaterWaveView.swift */; };
+		1F60C7762258BD98004CA398 /* waveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F60C7752258BD98004CA398 /* waveView.swift */; };
 		1F6AC5EA22464E430024AD51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6AC5E922464E430024AD51 /* AppDelegate.swift */; };
 		1F6AC5EC22464E430024AD51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6AC5EB22464E430024AD51 /* ViewController.swift */; };
 		1F6AC5EF22464E430024AD51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F6AC5ED22464E430024AD51 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 		1F3CDCAC22573B6F00B8A0ED /* CLRotateAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLRotateAnimationView.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		1F60C7712258B1A5004CA398 /* StringViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringViewController.swift; sourceTree = "<group>"; };
 		1F60C7732258B888004CA398 /* WaterWaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterWaveView.swift; sourceTree = "<group>"; };
+		1F60C7752258BD98004CA398 /* waveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = waveView.swift; sourceTree = "<group>"; };
 		1F6AC5E622464E430024AD51 /* SwiftTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F6AC5E922464E430024AD51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F6AC5EB22464E430024AD51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				1F3CDCAC22573B6F00B8A0ED /* CLRotateAnimationView.swift */,
 				1F14A58822585EE6005CA76A /* SNRoundAnimationView.swift */,
 				1F60C7732258B888004CA398 /* WaterWaveView.swift */,
+				1F60C7752258BD98004CA398 /* waveView.swift */,
 			);
 			path = loading;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F3CDCAD22573B6F00B8A0ED /* CLRotateAnimationView.swift in Sources */,
+				1F60C7762258BD98004CA398 /* waveView.swift in Sources */,
 				1F14A58C22588CF3005CA76A /* BasicUIViewController.swift in Sources */,
 				1F6AC5EC22464E430024AD51 /* ViewController.swift in Sources */,
 				1F60C7722258B1A5004CA398 /* StringViewController.swift in Sources */,
