@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F14A585225830C6005CA76A /* RotateLoadingAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F14A584225830C6005CA76A /* RotateLoadingAnimationController.swift */; };
+		1F14A58722585CB0005CA76A /* AnimationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F14A58622585CB0005CA76A /* AnimationListViewController.swift */; };
+		1F14A58922585EE6005CA76A /* SNRoundAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F14A58822585EE6005CA76A /* SNRoundAnimationView.swift */; };
+		1F14A58C22588CF3005CA76A /* BasicUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F14A58B22588CF3005CA76A /* BasicUIViewController.swift */; };
 		1F3CDCAD22573B6F00B8A0ED /* CLRotateAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3CDCAC22573B6F00B8A0ED /* CLRotateAnimationView.swift */; };
 		1F6AC5EA22464E430024AD51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6AC5E922464E430024AD51 /* AppDelegate.swift */; };
 		1F6AC5EC22464E430024AD51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6AC5EB22464E430024AD51 /* ViewController.swift */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F14A584225830C6005CA76A /* RotateLoadingAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateLoadingAnimationController.swift; sourceTree = "<group>"; };
+		1F14A58622585CB0005CA76A /* AnimationListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationListViewController.swift; sourceTree = "<group>"; };
+		1F14A58822585EE6005CA76A /* SNRoundAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNRoundAnimationView.swift; sourceTree = "<group>"; };
+		1F14A58B22588CF3005CA76A /* BasicUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicUIViewController.swift; sourceTree = "<group>"; };
 		1F3CDCAC22573B6F00B8A0ED /* CLRotateAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLRotateAnimationView.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		1F6AC5E622464E430024AD51 /* SwiftTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F6AC5E922464E430024AD51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -37,9 +45,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F14A58222582CF4005CA76A /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				1F14A58622585CB0005CA76A /* AnimationListViewController.swift */,
+				1F14A58D22589798005CA76A /* tools */,
+				1F14A58A22588CDD005CA76A /* BasicUI */,
+				1F14A58322582D07005CA76A /* loading */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		1F14A58322582D07005CA76A /* loading */ = {
+			isa = PBXGroup;
+			children = (
+				1F14A584225830C6005CA76A /* RotateLoadingAnimationController.swift */,
+				1F3CDCAC22573B6F00B8A0ED /* CLRotateAnimationView.swift */,
+				1F14A58822585EE6005CA76A /* SNRoundAnimationView.swift */,
+			);
+			path = loading;
+			sourceTree = "<group>";
+		};
+		1F14A58A22588CDD005CA76A /* BasicUI */ = {
+			isa = PBXGroup;
+			children = (
+				1F14A58B22588CF3005CA76A /* BasicUIViewController.swift */,
+			);
+			path = BasicUI;
+			sourceTree = "<group>";
+		};
+		1F14A58D22589798005CA76A /* tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = tools;
+			sourceTree = "<group>";
+		};
 		1F6AC5DD22464E430024AD51 = {
 			isa = PBXGroup;
 			children = (
+				1F14A58222582CF4005CA76A /* Animation */,
 				1F6AC5E822464E430024AD51 /* SwiftTest */,
 				1F6AC5E722464E430024AD51 /* Products */,
 			);
@@ -58,7 +103,6 @@
 			children = (
 				1F6AC5E922464E430024AD51 /* AppDelegate.swift */,
 				1F6AC5EB22464E430024AD51 /* ViewController.swift */,
-				1F3CDCAC22573B6F00B8A0ED /* CLRotateAnimationView.swift */,
 				1F6AC5ED22464E430024AD51 /* Main.storyboard */,
 				1F6AC5F022464E450024AD51 /* Assets.xcassets */,
 				1F6AC5F222464E450024AD51 /* LaunchScreen.storyboard */,
@@ -139,8 +183,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F3CDCAD22573B6F00B8A0ED /* CLRotateAnimationView.swift in Sources */,
+				1F14A58C22588CF3005CA76A /* BasicUIViewController.swift in Sources */,
 				1F6AC5EC22464E430024AD51 /* ViewController.swift in Sources */,
+				1F14A585225830C6005CA76A /* RotateLoadingAnimationController.swift in Sources */,
 				1F6AC5EA22464E430024AD51 /* AppDelegate.swift in Sources */,
+				1F14A58722585CB0005CA76A /* AnimationListViewController.swift in Sources */,
+				1F14A58922585EE6005CA76A /* SNRoundAnimationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
