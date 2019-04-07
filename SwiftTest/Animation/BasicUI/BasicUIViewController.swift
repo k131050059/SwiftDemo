@@ -41,6 +41,7 @@ class BasicUIViewController: UIViewController, UITextFieldDelegate,UIPickerViewD
         let button = UIButton.init(frame:CGRect(x: 150, y: 50, width: 50, height: 50))
         button.backgroundColor=UIColor.red
         button.setTitle("位移", for: UIControl.State.normal)
+//        button.addTarget(self, action: #selector(transformClick), for: UIControl.Event.touchUpInside)
         button.addTarget(self, action: #selector(transformClick), for: UIControl.Event.touchUpInside)
         self.view.addSubview(button)
     }
