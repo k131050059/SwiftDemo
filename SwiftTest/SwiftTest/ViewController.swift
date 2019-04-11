@@ -9,7 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
-
+    let titles = ["基础动画和控件","Alamofire"]
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.isTranslucent = false
@@ -24,17 +25,21 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         return 44.0
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return titles.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell.init(style: UITableViewCell.CellStyle.default, reuseIdentifier: "CellIdentifier")
-        cell.textLabel?.text = " 基础动画和控件"
+        cell.textLabel?.text = titles[indexPath.row]
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.row {
         case 0:
             let vc = AnimationListViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+            break
+        case 1:
+            let vc = SJAlamofireController()
             self.navigationController?.pushViewController(vc, animated: true)
             break
         default:
