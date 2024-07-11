@@ -21,6 +21,7 @@
 		1F6AC5F122464E450024AD51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F6AC5F022464E450024AD51 /* Assets.xcassets */; };
 		1F6AC5F422464E450024AD51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F6AC5F222464E450024AD51 /* LaunchScreen.storyboard */; };
 		1FB6133C225ED7F30039AF06 /* SJAlamofireController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB6133B225ED7F30039AF06 /* SJAlamofireController.swift */; };
+		4C7F0CB827F041BB0055B73E /* SwiftTourController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7F0CB727F041BB0055B73E /* SwiftTourController.swift */; };
 		C3F1ECA87F8B0396746077F7 /* Pods_SwiftTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA8A192E0B420B4FDC08239 /* Pods_SwiftTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		1F6AC5F322464E450024AD51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F6AC5F522464E450024AD51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FB6133B225ED7F30039AF06 /* SJAlamofireController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SJAlamofireController.swift; sourceTree = "<group>"; };
+		4C7F0CB727F041BB0055B73E /* SwiftTourController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTourController.swift; sourceTree = "<group>"; };
 		52BE2C4288E524399E2EB28A /* Pods-SwiftTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftTest/Pods-SwiftTest.debug.xcconfig"; sourceTree = "<group>"; };
 		9FA8A192E0B420B4FDC08239 /* Pods_SwiftTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B28581B8BA131EE84A6B9465 /* Pods-SwiftTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftTest/Pods-SwiftTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 		1F6AC5DD22464E430024AD51 = {
 			isa = PBXGroup;
 			children = (
+				4C7F0CB627F041A50055B73E /* SwiftTour */,
 				1FB6133A225ED7CD0039AF06 /* NetWork */,
 				1F14A58222582CF4005CA76A /* Animation */,
 				1F6AC5E822464E430024AD51 /* SwiftTest */,
@@ -152,6 +155,14 @@
 				9FA8A192E0B420B4FDC08239 /* Pods_SwiftTest.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C7F0CB627F041A50055B73E /* SwiftTour */ = {
+			isa = PBXGroup;
+			children = (
+				4C7F0CB727F041BB0055B73E /* SwiftTourController.swift */,
+			);
+			path = SwiftTour;
 			sourceTree = "<group>";
 		};
 		E2626F1E6C1A703BDA510044 /* Pods */ = {
@@ -260,20 +271,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftTest/Pods-SwiftTest-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftTest/Pods-SwiftTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftTest/Pods-SwiftTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftTest/Pods-SwiftTest-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftTest/Pods-SwiftTest-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -286,6 +292,7 @@
 				1F3CDCAD22573B6F00B8A0ED /* CLRotateAnimationView.swift in Sources */,
 				1F60C7762258BD98004CA398 /* waveView.swift in Sources */,
 				1F14A58C22588CF3005CA76A /* BasicUIViewController.swift in Sources */,
+				4C7F0CB827F041BB0055B73E /* SwiftTourController.swift in Sources */,
 				1F6AC5EC22464E430024AD51 /* ViewController.swift in Sources */,
 				1F60C7722258B1A5004CA398 /* StringViewController.swift in Sources */,
 				1F14A585225830C6005CA76A /* RotateLoadingAnimationController.swift in Sources */,
@@ -441,6 +448,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 43T835T2CQ;
 				INFOPLIST_FILE = SwiftTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -459,6 +467,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 43T835T2CQ;
 				INFOPLIST_FILE = SwiftTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
