@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+ 
     @IBOutlet weak var drawView: DrawView!
     @IBAction func changeColorBtn(_ sender: UIButton) {
         switch sender.tag {
@@ -32,7 +32,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+  
         // Do any additional setup after loading the view, typically from a nib.
     }
 

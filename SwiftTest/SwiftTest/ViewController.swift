@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
-    let titles = ["基础动画和控件","Alamofire","语法"]
+    let titles = ["基础动画和控件","Alamofire","语法","数组"]
  
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +44,10 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             break
         case 2:
             let vc = SwiftTourController()
+            self.navigationController?.pushViewController(vc, animated: true)
+            break
+        case 3:
+            let vc = ArrayController()
             self.navigationController?.pushViewController(vc, animated: true)
             break
         default:

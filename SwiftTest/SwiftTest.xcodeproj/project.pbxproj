@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,6 +22,7 @@
 		1F6AC5F422464E450024AD51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F6AC5F222464E450024AD51 /* LaunchScreen.storyboard */; };
 		1FB6133C225ED7F30039AF06 /* SJAlamofireController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB6133B225ED7F30039AF06 /* SJAlamofireController.swift */; };
 		4C7F0CB827F041BB0055B73E /* SwiftTourController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7F0CB727F041BB0055B73E /* SwiftTourController.swift */; };
+		4C983A422C426B45000CA64A /* ArrayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C983A412C426B45000CA64A /* ArrayController.swift */; };
 		C3F1ECA87F8B0396746077F7 /* Pods_SwiftTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA8A192E0B420B4FDC08239 /* Pods_SwiftTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		1F6AC5F522464E450024AD51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FB6133B225ED7F30039AF06 /* SJAlamofireController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SJAlamofireController.swift; sourceTree = "<group>"; };
 		4C7F0CB727F041BB0055B73E /* SwiftTourController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTourController.swift; sourceTree = "<group>"; };
+		4C983A412C426B45000CA64A /* ArrayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayController.swift; sourceTree = "<group>"; };
 		52BE2C4288E524399E2EB28A /* Pods-SwiftTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftTest/Pods-SwiftTest.debug.xcconfig"; sourceTree = "<group>"; };
 		9FA8A192E0B420B4FDC08239 /* Pods_SwiftTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B28581B8BA131EE84A6B9465 /* Pods-SwiftTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftTest/Pods-SwiftTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 		1F6AC5DD22464E430024AD51 = {
 			isa = PBXGroup;
 			children = (
+				4C983A402C426B25000CA64A /* Array */,
 				4C7F0CB627F041A50055B73E /* SwiftTour */,
 				1FB6133A225ED7CD0039AF06 /* NetWork */,
 				1F14A58222582CF4005CA76A /* Animation */,
@@ -163,6 +166,14 @@
 				4C7F0CB727F041BB0055B73E /* SwiftTourController.swift */,
 			);
 			path = SwiftTour;
+			sourceTree = "<group>";
+		};
+		4C983A402C426B25000CA64A /* Array */ = {
+			isa = PBXGroup;
+			children = (
+				4C983A412C426B45000CA64A /* ArrayController.swift */,
+			);
+			path = Array;
 			sourceTree = "<group>";
 		};
 		E2626F1E6C1A703BDA510044 /* Pods */ = {
@@ -299,6 +310,7 @@
 				1F6AC5EA22464E430024AD51 /* AppDelegate.swift in Sources */,
 				1FB6133C225ED7F30039AF06 /* SJAlamofireController.swift in Sources */,
 				1F14A58722585CB0005CA76A /* AnimationListViewController.swift in Sources */,
+				4C983A422C426B45000CA64A /* ArrayController.swift in Sources */,
 				1F60C7742258B888004CA398 /* WaterWaveView.swift in Sources */,
 				1F14A58922585EE6005CA76A /* SNRoundAnimationView.swift in Sources */,
 			);
